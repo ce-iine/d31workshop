@@ -1,0 +1,22 @@
+<h3>inventory</h3>
+
+<table border="1">
+    <thead>
+        <tr>
+            <td>Item</td>
+            <td></td>
+            <td>Add</td>
+        </tr>
+    </thead>
+    <tr *ngFor="let i of items">
+        <td>
+            {{ i.name }}
+        </td>
+        <td>
+            <img src="{{i.url}}" width="200">
+        </td>
+        <td>
+            <button class="btn btn-primary" (click)="itemSelected(i.name)">Add</button>
+        </td>
+    </tr>
+</table>

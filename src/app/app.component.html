@@ -1,0 +1,5 @@
+<div class="side-by-side">
+    <app-inventory [items]="items"  (sendName)="addToList($event)"></app-inventory>
+
+    <app-cart [cartItems]="shopList"></app-cart>
+</div>
